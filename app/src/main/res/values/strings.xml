@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AquaBiz</string>
+
+    <string name="sfc03_species01">0</string>
+    <string name="sfc03_species02">0</string>
+    <string name="sfc03_key">AIzaSyBf403X1XZtAHsqMXaVanEmxDtHiWs42wI</string>
+    <string name="sfc03_species_name">0</string>
+    <string name="sfc03_howtogrow">0</string>
+    <string name="sfc03_costandreturn">0</string>
+    <string name="sfc03_products">0</string>
+    <string name="sfc03_faq">0</string>
+    <string name="sfc03_saan">0</string>
+    <string name="sfc04_products01">0</string>
+    <string name="sfc04_products02">0</string>
+    <string name="sfc04_products02_selected">0</string>
+    <string name="sfc04_products03">0</string>
+    <string name="sfc04_products04_province">Abra|ABROAD|Agusan del Norte|Agusan del Sur|Aklan|Albay|Antique|Apayao|Aurora|Bacolod|Baguio|Bataan|Batanes|Batangas - Agoncillo &amp; San Nico|Batangas - Calatagan|Batangas - Laurel &amp; Talisay|Benguet|Biliran|Bohol|Bukidnon|Bulacan|Butuan|Cagayan|Cagayan de Oro|Camarines Norte|Camarines Sur|Camiguin|Capiz|Catanduanes|Cavite|Cebu|Compostela Valley|Dagupan|Davao - Central|Davao City|Davao de Oro|Davao del Norte|Davao del Sur|Davao Occidental|Davao Oriental|Dinagat Island|Dumaguete|General Santos|Guimaras|Ifugao|Iligan|Ilocos Norte|Ilocos Sur|Iloilo|Isabela|Kalinga|La Union|Laguna|Lanao del Norte|Lanao del Sur|Leyte - Ormoc|Leyte - Southern|Leyte - Tacloban|Maguindanao|Marinduque|Masbate|Metro Manila|Misamis Occidental|Misamis Oriental|Mountain Province|Negros Occidental - Northern|Negros Occidental - Southern|Negros Oriental - Southern|Negros Oriental – Northern|North Cotabato|Nueva Ecija|Nueva Vizcaya|Occidental Mindoro|Olongapo|Oriental Mindoro|Palawan|Palawan – Coron|Pampanga - Eastern|Pampanga - Western|Pangasinan - Central|Pangasinan - Western|Quezon|Quezon - Infanta, Lucban &amp; Real|Quezon - Lucena|Quirino|Rizal|Romblon|Samar - Eastern|Samar - Northern|Samar - Western|Sarangani|Siargao Island|Siquijor|Sorsogon|South Cotabato|Sultan Kudarat|Sulu|Surigao del Norte|Surigao del Sur|Tarlac|Zambales|Zamboanga City|Zamboanga del Norte|Zamboanga del Sur|Zamboanga Sibugay|</string>
+    <string name="sfc05_branch">0</string>
+    <string name="sfc05_branch_selected">0</string>
+    <string name="sfc07_weather_tide_dam">0</string>
+    <string name="sfc08_price_watch">0</string>
+    <string name="sfc08_price_watch_last_id">2000</string>
+    <string name="sfc09_aquarx01">0</string>
+    <string name="sfc09_aquarx02">0</string>
+    <string name="sfc09_aquarx02_selected">0</string>
+    <string name="sfc09_aquarx03">0</string>
+</resources>

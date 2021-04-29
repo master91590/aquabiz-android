@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tateh.aquabiz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AquaBiz"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+        <activity android:name=".sfc09AquaRX03"></activity>
+        <activity android:name=".sfc09AquaRX02" />
+        <activity
+            android:name=".sfc09AquaRX01"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc08PriceWatch"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc07WeatherTideDam"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc06Blog"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc05Locator02"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBf403X1XZtAHsqMXaVanEmxDtHiWs42wI" />
+
+        <activity
+            android:name=".sfc05Locator01"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc04Products04"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc04Products03"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc04Products02"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc04Products01"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc03Species07"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc03Species06"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc03Species05"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc03Species04"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc03Species03"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc03Species02"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc03Species01"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sfc02Home"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".sfc01SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
