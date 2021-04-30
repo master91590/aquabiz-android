@@ -77,7 +77,6 @@ public class sfc09AquaRX03 extends AppCompatActivity {
             btnNext.setVisibility(View.VISIBLE);
             btnPrevious.setVisibility(View.VISIBLE);
         }
-
         if(bilang >= 3) btn_page3.setVisibility(View.VISIBLE);
         if(bilang >= 4) btn_page4.setVisibility(View.VISIBLE);
         img.setImageBitmap(setting_global.StringToBitMap(arrImage[0]));
