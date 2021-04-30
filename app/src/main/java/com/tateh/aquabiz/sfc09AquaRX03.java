@@ -16,6 +16,7 @@ public class sfc09AquaRX03 extends AppCompatActivity {
     ImageView img;
     AppCompatButton btn_page1, btn_page2, btn_page3, btn_page4, btnPrevious, btnNext;
     int page = 0, bilang=0;
+    boolean pareho = false;
     String []arrImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,11 @@ public class sfc09AquaRX03 extends AppCompatActivity {
         btnPrevious = findViewById(R.id.btnPrevious);
         btnNext = findViewById(R.id.btnNext);
 
+        String selected = setting_global.getpreferences(this, R.string.sfc09_aquarx02_selected);
+        StringTokenizer tokens_selected = new StringTokenizer(selected, "♣");
+        String isda = tokens_selected.nextToken();
+        setTitle(isda + " Diseases");
+
         ListView listview = findViewById(R.id.listview);
 
         String kabuuan = setting_global.getpreferences(this, R.string.sfc09_aquarx03);
@@ -43,11 +49,33 @@ public class sfc09AquaRX03 extends AppCompatActivity {
         tokens.nextToken();
         String nilalaman = tokens.nextToken();
         String images = tokens.nextToken();
-        arrImage = images.split("♥");
-        bilang = arrImage.length;
+
+        StringTokenizer tokens_img = new StringTokenizer(images, "♥");
+        int bilang_img = tokens_img.countTokens();
+        arrImage = new String[bilang_img];
+        String hiwalay_img="";
+        for(int i = 0; i < bilang_img; i++){
+            String img_hiwalay = tokens_img.nextToken();
+            StringTokenizer tokens_img_hiwalay = new StringTokenizer(img_hiwalay, "|");
+            String anong_isda = tokens_img_hiwalay.nextToken();
+            hiwalay_img = tokens_img_hiwalay.nextToken();
+            if(anong_isda.equals(isda)) {
+                arrImage[bilang] = hiwalay_img;
+                bilang++;
+                pareho = true;
+            }
+            else if(anong_isda.equals("lahat") && !pareho) {
+                arrImage[bilang] = hiwalay_img;
+                bilang++;
+            }
+        }
+
+        //arrImage = images.split("♥");
         if(bilang >= 2){
             btn_page1.setVisibility(View.VISIBLE);
             btn_page2.setVisibility(View.VISIBLE);
+            btnNext.setVisibility(View.VISIBLE);
+            btnPrevious.setVisibility(View.VISIBLE);
         }
         if(bilang >= 3) btn_page3.setVisibility(View.VISIBLE);
         if(bilang >= 4) btn_page4.setVisibility(View.VISIBLE);
@@ -59,7 +87,7 @@ public class sfc09AquaRX03 extends AppCompatActivity {
             sfc03Species01_Item adapter = new sfc03Species01_Item(tokens2.nextToken());
             view_adapters.add(adapter);
         }
-        sfc04Products03_Adapter lAdapter = new sfc04Products03_Adapter(this, R.layout.activity_sfc04_products03_adapter, view_adapters);
+        sfc09AquaRX03_Adapter lAdapter = new sfc09AquaRX03_Adapter(this, R.layout.activity_sfc09_aqua_rx03_adapter, view_adapters);
         listview.setAdapter(lAdapter);
     }
 
@@ -104,18 +132,18 @@ public class sfc09AquaRX03 extends AppCompatActivity {
         btn_page2.setEnabled(true);
         btn_page3.setEnabled(true);
         btn_page4.setEnabled(true);
-        img.setImageBitmap(setting_global.StringToBitMap(arrImage[0]));
+        img.setImageBitmap(setting_global.StringToBitMap(arrImage[i]));
         page = i;
-        if(i == 1) {
+        if(i == 0) {
             btn_page1.setBackgroundResource(R.drawable.sfc09_aquarx03_checked);
             btn_page1.setEnabled(false);
-        }else if(i == 2) {
+        }else if(i == 1) {
             btn_page2.setBackgroundResource(R.drawable.sfc09_aquarx03_checked);
             btn_page2.setEnabled(false);
-        }else if(i == 3) {
+        }else if(i == 2) {
             btn_page3.setBackgroundResource(R.drawable.sfc09_aquarx03_checked);
             btn_page3.setEnabled(false);
-        }else if(i == 4) {
+        }else if(i == 3) {
             btn_page4.setBackgroundResource(R.drawable.sfc09_aquarx03_checked);
             btn_page4.setEnabled(false);
         }

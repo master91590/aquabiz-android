@@ -56,13 +56,13 @@ public class sfc09AquaRX02 extends AppCompatActivity {
                 sfc03Species01_Item adapter = new sfc03Species01_Item(kabuuan);
                 sfc03Species01_Item adapterType = new sfc03Species01_Item(type);
                 if(kind.equals("Infectious")){
-                    if(!last_type.equals("type")){
+                    if(!last_type.equals(type)){
                         view_adapters_infectious.add(adapterType);
                         last_type = type;
                     }
                     view_adapters_infectious.add(adapter);
                 }else{
-                    if(!last_type.equals("type")){
+                    if(!last_type.equals(type)){
                         view_adapters_non_infectious.add(adapterType);
                         last_type = type;
                     }

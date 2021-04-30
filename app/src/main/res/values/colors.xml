@@ -11,6 +11,6 @@
     <color name="transparent_white">#E6FFFFFF</color>
     <color name="red">#FFFF0000</color>
     <color name="light_gray">#FFCCCCCC</color>
-    <color name="transparent_gray">#BA333333</color>
+    <color name="transparent_gray">#90333333</color>
     <color name="selectOn">#4501561D</color>
 </resources>
