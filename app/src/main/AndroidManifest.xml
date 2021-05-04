@@ -18,7 +18,8 @@
         android:theme="@style/Theme.AquaBiz"
         android:usesCleartextTraffic="true"
         tools:ignore="UnusedAttribute">
-        <activity android:name=".sfc09AquaRX03"></activity>
+        <activity android:name=".sfc10Toolkit01"></activity>
+        <activity android:name=".sfc09AquaRX03" />
         <activity android:name=".sfc09AquaRX02" />
         <activity
             android:name=".sfc09AquaRX01"

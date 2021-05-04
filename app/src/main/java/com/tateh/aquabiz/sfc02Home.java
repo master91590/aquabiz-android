@@ -108,7 +108,7 @@ public class sfc02Home extends AppCompatActivity {
     }
 
     public void btn_toolkit(View view) {
-
+        setting_global.gointent(this,sfc10Toolkit01.class);
     }
 
     public void btn_notification(View view) {
